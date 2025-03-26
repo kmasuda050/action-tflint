@@ -3,8 +3,8 @@
 # Fail fast on errors, unset variables, and failures in piped commands
 set -Eeuo pipefail
 
-echo "-${REVIEWDOG_GITHUB_API_TOKEN}-"
-echo "-${REVIEWDOG_GITHUB_API_TOKEN:-INPUT_GITHUB_TOKEN}-"
+echo "-${INPUT_REVIEWDOG_GITHUB_API_TOKEN}-"
+echo "-${INPUT_REVIEWDOG_GITHUB_API_TOKEN:-INPUT_GITHUB_TOKEN}-"
 
 #cd "${GITHUB_WORKSPACE}/${INPUT_WORKING_DIRECTORY}" || exit
 #

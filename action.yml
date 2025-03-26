@@ -107,7 +107,7 @@ runs:
         INPUT_TFLINT_TARGET_DIR: ${{ inputs.tflint_target_dir }}
         INPUT_TFLINT_CONFIG: ${{ inputs.tflint_config }}
         INPUT_FLAGS: ${{ inputs.flags }}
-        INPUT_REVIEWDOG_GITHUB_API_TOKEN: ${{ inputs.reviewdog_github_api_token || '""' }}
+        INPUT_REVIEWDOG_GITHUB_API_TOKEN: ${{ inputs.reviewdog_github_api_token }}
 
 branding:
   icon: 'edit'
